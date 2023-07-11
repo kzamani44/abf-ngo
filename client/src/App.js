@@ -1,7 +1,20 @@
-import './App.css';
+import React from "react";
+import { Header, AboutUs, Features, Events } from "./components";
 
-function App() {
-	return <div className="App"></div>;
-}
+const App = () => (
+	<div className="w-screen h-screen flex flex-col overflow-x-hidden">
+		<div>
+			<Header/>
+		</div>
+
+		<div>
+			<AboutUs/>
+			<Features/>
+			<Events/>
+		</div>
+
+
+	</div>
+	);
 
 export default App;
