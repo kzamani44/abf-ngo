@@ -40,7 +40,9 @@ body{
   height: 100%;
   transition: all ease-out 100ms;
 }
-
+.bg-form{
+  background: #bdb76b
+}
 
 @tailwind base;
 @tailwind components;

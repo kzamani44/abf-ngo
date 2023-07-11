@@ -11,12 +11,12 @@ const Header = () => {
   }
 
   return (
-    <div className='w-full h-auto'>
+    <header className='w-full h-auto'>
 
       {/* Desktop and Tablet */}
-      <div className='hidden md:flex flex-col'>
+      <div className='hidden relative md:flex flex-col'>
         {/* NavBar Section */}
-        <div className='w-full absolute z-10 p-4 px-48 flex justify-between'>
+        <nav className='w-full absolute z-10 p-4 px-32 flex justify-between'>
           <h1 className='text-4xl font-bold text-yellow-500 cursor-pointer'>Abf.</h1>
 
           <div className='flex items-center gap-8'>
@@ -30,8 +30,8 @@ const Header = () => {
 
           </div>
           
-        </div>
-        <div className='w-full relative min-h-screen bg-hero bg-center bg-cover'>
+        </nav>
+        <div className='w-full min-h-screen bg-hero bg-center bg-cover'>
           {/* Hero Section */}
           <div className='absolute top-0 left-0 w-full h-full bg-overlay'></div>
           <div className='px-48 absolute top-[25%] max-w-5xl'>
@@ -61,7 +61,7 @@ const Header = () => {
       
 
       {/* Mobile */}
-      <div className='flex md:hidden flex-col'>
+      <div className='flex md:hidden  relative flex-col'>
         {/* NavBar Section */}
         <div className='w-full absolute z-10 p-4 px-4 flex justify-between'>
           <h1 className='text-4xl font-bold text-yellow-500 cursor-pointer'>Abf.</h1>
@@ -82,7 +82,7 @@ const Header = () => {
           </div>
           
         </div>
-        <div className='w-full relative min-h-screen bg-hero1 bg-center bg-cover'>
+        <div className='w-full min-h-screen bg-hero1 bg-center bg-cover'>
           {/* Hero Section */}
           <div className='absolute top-0 left-0 w-full h-full bg-overlay'></div>
           <div className='px-4 absolute top-[15%] max-w-[80%]'>
@@ -111,7 +111,7 @@ const Header = () => {
         
 
       </div>
-    </div>
+    </header>
   )
 }
 
